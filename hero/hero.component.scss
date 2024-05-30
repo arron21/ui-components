@@ -1,0 +1,60 @@
+.full {
+  @media screen and (max-width: 601px) {
+    height: 100vh;
+  }
+}
+.stack {
+  display: grid;
+}
+.stack-item {
+  grid-area: 1 / 1;
+}
+
+.text {
+  @extend .stack-item;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  margin: auto 16px;
+  h1 {
+    font-size: clamp(30px, 8vw, 50px);
+  }
+  h2 {
+    font-size: clamp(10px, 5vw, 30px);
+  }
+  app-button {
+    margin: var(--spacing);
+  }
+  div {
+    margin-top: 2rem;
+  }
+}
+
+.shade {
+  @extend .stack-item;
+  background-color: rgba(0, 0, 0, 0.6);
+  //   background-color: orange;
+  //   mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.img {
+  @extend .stack-item;
+  img, video {
+    pointer-events: none;
+    aspect-ratio: 16 / 9;
+    @media screen and (orientation: portrait) {
+      height: 100vh;
+      aspect-ratio: 9 / 16;
+    }
+    @extend .stack-item;
+    width: 100%;
+    height: 100%;
+    // aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: top;
+  }
+}

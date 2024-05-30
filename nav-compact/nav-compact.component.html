@@ -1,0 +1,10 @@
+<nav class="compact-nav">
+    <button [ngClass]="{'active': active}" (click)="toggleNav()">Menu</button>
+    @if(active) {
+        <ul @fadeInOut [ngClass]="{'active': active}" class="compact-nav__menu">
+            @for(l of links; track l) {
+                <a #link (click)="closeNav()" routerLinkActive="active" [routerLink]="l.link">{{ l.label }}</a>
+            }
+        </ul>
+    }
+</nav>

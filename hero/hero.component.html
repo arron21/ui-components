@@ -1,0 +1,23 @@
+<div class="stack" [ngClass]="{full}">
+  <div class="img">
+    @if(img) {
+      <img [src]="img" />
+    }
+    @if(video) {
+      <video width="320" height="240" autoplay muted loop>
+        <source [src]="video" type="video/mp4">
+      </video>
+    }
+  </div>
+  <div class="shade"></div>
+  <div class="text">
+    <h1 *ngIf="heroText">{{ heroText }}</h1>
+    <h2 *ngIf="heroTextSecondary">{{ heroTextSecondary }}</h2>
+    <div>
+      <app-button *ngFor="let l of links" [routerLink]="l.route">{{
+        l.label
+      }}</app-button>
+    </div>
+    <ng-content></ng-content>
+  </div>
+</div>
