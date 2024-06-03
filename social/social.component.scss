@@ -3,6 +3,15 @@ a {
   color: var(--type-color);
 }
 
+fa-icon, a {
+  display: block;
+  width: 1em;
+}
+
 :host {
   margin: var(--space-4);
+}
+
+div {
+  display: flex;
 }
