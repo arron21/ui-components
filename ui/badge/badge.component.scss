@@ -1,0 +1,20 @@
+span {
+  border-radius: 20px;
+  font-size: 0.75em;
+  padding: var(--space-1) var(--space-2);
+  &.solid {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--off-black);
+    color: var(--type-color);
+  }
+  &.outline {
+    border: 1px solid;
+    background-color: transparent;
+    border-color: var(--type-color);
+  }
+  &.subtle {
+    background-color: var(--off-background);
+    border-color: var(--type-color);
+  }
+}

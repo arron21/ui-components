@@ -1,0 +1,50 @@
+:host {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.controls {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    > div {
+        border-radius: 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: var(--primary);
+        line-height: 1em;
+        height: 24px;
+        width: 24px;
+    }
+}
+
+.testimonials {
+    transition: 250ms ease-in-out;
+    white-space: nowrap;
+}
+
+.testimonial {
+    white-space: normal;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 16px;
+    border-radius: 1rem;
+    background-color: white;
+    background-color: #efefef;
+    margin: 16px;
+    width: calc(100% - 32px);
+    p {
+        margin: 0;
+    }
+    div {
+        font-size: 0.8rem;
+        text-align: right;
+        margin-top: 0.5rem;
+    }
+}

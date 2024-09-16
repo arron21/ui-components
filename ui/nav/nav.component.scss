@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+
+  a {
+    display: block;
+    padding: var(--space-2);
+    margin: 0 var(--space-1);
+    color: var(--type-color);
+    text-decoration: none;
+    border-radius: var(--roundness);
+    &:hover {
+      background-color: var(--off-background);
+    }
+    &.active {
+      color: var(--primary);
+      font-weight: bold;
+      // background-color: var(--primary);
+    }
+  }
+}
+
+.centered {
+  display: flex;
+  margin: auto;
+}
+
+.vertical {
+  flex-direction: column;
+}

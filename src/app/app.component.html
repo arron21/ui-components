@@ -1,0 +1,10 @@
+
+<div class="container">
+  @for(r of routes; track r.path) {
+    <!-- <a [routerLink]="r.path">{{ r.path }}</a> -->
+  }
+  <app-nav [vertical]="true" [links]="routes"></app-nav>
+  <div class="router">
+    <router-outlet></router-outlet>
+  </div>
+</div>

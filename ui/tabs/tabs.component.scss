@@ -1,0 +1,41 @@
+$brRound: 0px;
+.radio-toggle-container {
+  display: inline-flex;
+  border-radius: $brRound;
+  //   border: 1px solid var(--blue-dark);
+  position: relative;
+}
+
+.radio-option {
+  padding: var(--space-3);
+  // padding: 12px;
+  // padding-top: 6px;
+  // padding-bottom: 6px;
+  border-radius: $brRound;
+  cursor: pointer;
+  z-index: 2;
+  &:hover {
+    background-color: var(--off-background);
+  }
+
+  &.selected {
+    color: var(--forground);
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.radio-pill {
+  position: absolute;
+  background-color: var(--blue);
+  height: calc(var(--border-width) + 2px);
+  bottom: 0;
+  border-radius: $brRound;
+  z-index: 1;
+  transition: 300ms all;
+}
+
+.radio-label {
+  pointer-events: none;
+}

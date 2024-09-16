@@ -1,0 +1,24 @@
+<div
+  #radioContainer
+  class="radio-toggle-container"
+  [ngClass]="{ 'd-none': options.length == 1 }"
+>
+  <div
+    tabindex="0"
+    class="radio-option"
+    [ngClass]="{ selected: selectedOption == o }"
+    [attr.data-el]="o[bindLabel]"
+    (keyup.enter)="onSelect($event, o)"
+    (keydown.space)="onSelect($event, o)"
+    (click)="onSelect($event, o)"
+    *ngFor="let o of options"
+  >
+    <span class="radio-label" *ngIf="bindLabel">{{ o[bindLabel] }}</span>
+    <span class="radio-label" *ngIf="!bindLabel">{{ o.label }}</span>
+  </div>
+  <div
+    [style.width.px]="pillWidth + 1"
+    [style.left.px]="pillOffset"
+    class="radio-pill"
+  ></div>
+</div>

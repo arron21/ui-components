@@ -1,0 +1,12 @@
+app-button {
+  width: 100%;
+  display: block;
+  text-transform: capitalize;
+}
+:host {
+  ::ng-deep {
+    button {
+      width: 100%;
+    }
+  }
+}

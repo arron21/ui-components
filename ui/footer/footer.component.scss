@@ -1,0 +1,20 @@
+a {
+  margin: var(--space-1);
+  display: block;
+  text-decoration: none;
+  color: var(--gray-dark);
+}
+.logo {
+  margin: var(--space-2);
+  mix-blend-mode: luminosity;
+}
+
+:host {
+  display: block;
+  border-top: 1px solid var(--off-background);
+  border-bottom: 1px solid var(--off-background);
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-5);
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-5);
+}

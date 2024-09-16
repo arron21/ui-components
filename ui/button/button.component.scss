@@ -1,0 +1,104 @@
+:host {
+  button {
+    ::ng-deep a {
+      text-decoration: none;
+      color: inherit;
+    }
+    cursor: pointer;
+    border: none;
+    border: 1px solid transparent;
+    color: var(--type-color);
+    display: inline-flex;
+    padding: var(--space-2);
+    border-radius: var(--roundness);
+    text-transform: inherit;
+    &.xs {
+      padding: 0 var(--space-1);
+      font-size: 80%;
+    }
+    &.sm {
+      padding: var(--space-1);
+      font-size: 90%;
+    }
+    &.md {
+      padding: var(--space-2) var(--space-2);
+    }
+    &.lg {
+      padding: var(--space-2) var(--space-3);
+      font-size: 110%;
+    }
+    &.xl {
+      padding: var(--space-2) var(--space-4);
+      font-size: 110%;
+    }
+    // width: 100%;
+    // font-weight: 600;
+    transition: 100ms ease-in-out;
+    &:hover {
+      background-color: var(--off-background);
+    }
+
+    &[disabled] {
+      opacity: 0.5;
+      // pointer-events: none;
+      cursor: not-allowed;
+      // color: var(--background);
+      background-color: var(--off-background);
+      border-color: var(--off-background);
+      &:hover {
+        background-color: var(--off-background);
+        border-color: var(--off-background);
+      }
+    }
+  }
+
+  .solid {
+    background-color: var(--primary);
+    &:hover {
+      background-color: var(--primary-dark);
+      border-color: var(--primary-dark);
+    }
+    border-color: var(--primary);
+    color: var(--off-black);
+    color: var(--type-color);
+  }
+  .outline {
+    background-color: transparent;
+    border-color: var(--type-color);
+  }
+  .ghost {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .link {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  .create {
+    background-color: var(--green);
+    border-color: var(--green);
+    &:hover {
+      background-color: var(--green-dark);
+      border-color: var(--green-dark);
+    }
+  }
+
+  .destroy {
+    background-color: var(--red);
+    border-color: var(--red);
+    &:hover {
+      background-color: var(--red-dark);
+      border-color: var(--red-dark);
+    }
+  }
+
+  .neutral {
+    background-color: var(--gray);
+    border-color: var(--gray);
+    &:hover {
+      background-color: var(--gray-dark);
+      border-color: var(--gray-dark);
+    }
+  }
+}

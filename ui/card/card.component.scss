@@ -1,0 +1,38 @@
+.card {
+  margin: var(--space-2);
+  padding: var(--space-3);
+  // box-shadow: var(--shadow-2);
+  // background-color: var(--card-bg);
+  border: var(--border-width) solid var(--off-background);
+  border-radius: var(--roundness);
+
+
+}
+:host {
+  ::ng-deep app-heading div {
+    margin-top: 0 !important;
+  }
+
+  ::ng-deep p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &.has-image {
+    ::ng-deep .card > div {
+      flex: 1;
+    }
+    .card {
+      display: flex;
+      @media screen and (max-width: 480px) {
+        
+        flex-direction: column;
+      }
+    }
+    
+  }
+}
+
+.hasHeading {
+  margin-top: var(--shadow-1);
+}
+

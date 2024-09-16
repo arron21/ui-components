@@ -1,0 +1,12 @@
+<!-- <div *ngFor="let l of links">
+  <app-button [variant]="'ghost'" [routerLink]="l.link">{{
+    l.label
+  }}</app-button>
+</div> -->
+
+<div *ngFor="let l of links">
+  <!-- {{ l[bindRoute] }} -->
+  <app-button [variant]="'ghost'" [routerLink]="l[bindRoute]">{{
+    l[bindLabel]
+  }}</app-button>
+</div>

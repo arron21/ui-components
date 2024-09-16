@@ -1,0 +1,5 @@
+<nav [ngClass]="{centered, vertical: 'vertical'}">
+  @for(l of links; track l.path) {
+    <a routerLinkActive="active" [routerLink]="l.path">{{ l.label || l.path }}</a>
+  }
+</nav>
