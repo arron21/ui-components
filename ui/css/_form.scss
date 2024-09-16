@@ -1,0 +1,19 @@
+:root {
+  // --input-bg: var(--foreground);
+}
+
+.ng-select.custom {
+  background-color: var(--input-bg);
+  padding: var(--space-2);
+  border: 0px;
+  min-height: 0px;
+  border-radius: 0;
+}
+.ng-select.custom .ng-select-container {
+  min-height: 0px;
+  border-radius: 0;
+}
+
+.ng-dropdown-panel {
+  background-color: var(--input-bg);
+}

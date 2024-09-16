@@ -1,0 +1,18 @@
+.grid-x {
+  grid-template-columns: 1fr;
+}
+.grid-x-x {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-x-x-x {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid {
+  display: grid;
+
+  @media screen and (max-width: 690px) {
+    grid-template-columns: 1fr;
+  }
+}

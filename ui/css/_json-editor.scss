@@ -1,0 +1,75 @@
+:host ::ng-deep json-editor,
+:host ::ng-deep json-editor .jsoneditor,
+:host ::ng-deep json-editor > div,
+:host ::ng-deep json-editor jsoneditor-outer {
+  height: 500px;
+}
+
+.jsoneditor {
+  //   background-color: red;
+  border-color: transparent;
+}
+
+div.jsoneditor-tree {
+  background-color: var(--background);
+}
+tr.jsoneditor-highlight {
+  background-color: var(--off-background);
+}
+
+div.jsoneditor-tree button.jsoneditor-dragarea:hover {
+  mix-blend-mode: color-burn;
+}
+
+div.jsoneditor-tree button.jsoneditor-contextmenu-button:hover {
+  mix-blend-mode: color-burn;
+}
+div.jsoneditor-tree button.jsoneditor-contextmenu-button.jsoneditor-selected {
+  mix-blend-mode: color-burn;
+}
+
+div.jsoneditor td {
+  color: var(--type-color);
+}
+
+div.jsoneditor-readonly {
+  color: var(--gray);
+}
+
+div.jsoneditor-value {
+  color: var(--type-color);
+}
+
+div.jsoneditor-value[contenteditable="true"]:focus {
+  background-color: var(--yellow-light);
+  border-color: var(--yellow);
+  color: var(--background);
+}
+
+div.jsoneditor-value[contenteditable="true"]:hover {
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+  color: var(--background);
+}
+
+div.jsoneditor-field {
+  color: var(--type-color);
+}
+
+div.jsoneditor-field[contenteditable="true"]:hover {
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+  color: var(--background);
+}
+
+div.jsoneditor-value.jsoneditor-string {
+  color: var(--green);
+}
+
+div.jsoneditor-value.jsoneditor-number {
+  color: var(--red);
+}
+
+div.jsoneditor-value.jsoneditor-null {
+  color: var(--blue);
+}
