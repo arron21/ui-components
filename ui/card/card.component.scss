@@ -1,13 +1,19 @@
 .card {
   margin: var(--space-2);
-  padding: var(--space-3);
-  // box-shadow: var(--shadow-2);
-  // background-color: var(--card-bg);
   border: var(--border-width) solid var(--off-background);
   border-radius: var(--roundness);
-
-
 }
+
+.card-content {
+  padding: var(--space-3);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
 :host {
   ::ng-deep app-heading div {
     margin-top: 0 !important;
@@ -36,3 +42,12 @@
   margin-top: var(--shadow-1);
 }
 
+
+.hasImage {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  // margin: calc(-1* var(--space-3)) calc(-1* var(--space-3)) 0 calc(-1* var(--space-3));
+  // max-height: 120px;
+  // object-fit: cover;
+}

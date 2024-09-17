@@ -11,4 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class CardComponent {
   @Input() cardTitle!: string;
+  @Input() subTitle!: string;
+  @Input() image!: string;
+
 }
