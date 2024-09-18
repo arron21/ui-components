@@ -8,8 +8,12 @@
   min-height: 100vh;
 }
 app-nav {
-    grid-area: 'nav';
+    grid-area: nav;
 }
 .router {
-    grid-area: 'main';
+    grid-area: main;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding-left: 64px;
+    padding-right: 64px;
 }

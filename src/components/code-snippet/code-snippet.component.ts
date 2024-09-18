@@ -9,10 +9,10 @@ import { Component, Input } from '@angular/core';
 })
 export class CodeSnippetComponent {
 
-  @Input() markdown!: string;
+  @Input() snippet!: string;
 
   copyToClipboard() {
-    const code = this.markdown;
+    const code = this.snippet;
 
     // Create a temporary textarea element
     const textarea = document.createElement("textarea");

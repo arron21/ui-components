@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { QuoteComponent } from "../../../ui/quote/quote.component";
+import { CodeSnippetComponent } from "../../components/code-snippet/code-snippet.component";
 
 @Component({
   selector: 'demo-page-quote',
   standalone: true,
-  imports: [QuoteComponent],
+  imports: [QuoteComponent, CodeSnippetComponent],
   templateUrl: './page-quote.component.html',
   styleUrl: './page-quote.component.scss'
 })
 export class PageQuoteComponent {
-
+  snippet = `
+  <app-quote text="I'm a developer, not a designer. I'm not a designer, I'm a developer." />`;
 }

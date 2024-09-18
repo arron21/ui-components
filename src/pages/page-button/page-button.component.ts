@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ButtonComponent } from '../../../ui/button/button.component';
-import { CodeSnippetComponent } from "../../components/code-snippet/code-snippet.component";
+import { ButtonComponent } from '@ui/button/button.component';
+import { CodeSnippetComponent } from "@components/code-snippet/code-snippet.component";
 
 @Component({
   selector: 'demo-page-button',

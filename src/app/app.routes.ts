@@ -42,10 +42,6 @@ export const routes: Routes = [
         component: PageHeroComponent
     },
     {
-        path: 'image-gallery', 
-        component: PageImageGalleryComponent
-    },
-    {
         path: 'quote', 
         component: PageQuoteComponent
     },

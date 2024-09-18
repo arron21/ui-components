@@ -4,7 +4,7 @@
       <img [src]="img" />
     }
     @if(video) {
-      <video width="320" height="240" autoplay muted loop>
+      <video width="320" height="240" autoplay muted loop playsinline>
         <source [src]="video" type="video/mp4">
       </video>
     }
