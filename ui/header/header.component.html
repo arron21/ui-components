@@ -1,1 +1,1 @@
-<div [ngClass]="{ isSticky: sticky }"><ng-content></ng-content></div>
+<div #headerContainer [style.background]="currentBackground" [ngClass]="{ isSticky: sticky, isFixed: fixed, isScrolled: isScrolled }"><ng-content></ng-content></div>

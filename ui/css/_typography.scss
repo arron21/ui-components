@@ -22,6 +22,19 @@ p {
   margin-bottom: var(--space-4);
 }
 
+.text-sm {
+  font-size: 0.8rem;
+}
+.text-base {
+  font-size: 1rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+}
+.text-2xl {
+  font-size: 1.563rem;
+}
+
 .text-muted {
   color: color-mix(in srgb, currentColor 10%, #676767);
 }

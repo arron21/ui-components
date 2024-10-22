@@ -12,5 +12,5 @@ import { CodeSnippetComponent } from "@components/code-snippet/code-snippet.comp
 })
 export class PageHomeComponent {
 
-  markdown1 = `npx blonkz@latest init`;
+  markdown1 = `npx aer@latest init`;
 }

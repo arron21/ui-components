@@ -1,8 +1,11 @@
+
+
 div {
   // padding: var(--space-2);
   display: flex;
   align-items: center;
-  background-color: var(--background);
+  // background-color: var(--background);
+  transition: all 200ms ease-in-out ;
   ::ng-deep > * {
     margin: 0 var(--space-2);
     &:first-child {
@@ -15,4 +18,17 @@ div {
   position: sticky;
   top: 0;
   z-index: 2;
+}
+
+.isFixed {
+  position: fixed;
+left: 0;
+right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.isScrolled {
+  // background-color: var(--background);
+  width: 100%;
 }
