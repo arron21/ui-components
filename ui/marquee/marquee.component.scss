@@ -1,0 +1,27 @@
+:host {
+    --items-gap: var(--space-3);
+}
+
+.marquee-container {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: var(--items-gap);
+    animation: move infinite 10s linear;
+}
+span:nth-of-type(odd) {
+    background: red;
+}
+span:nth-of-type(even) {
+    background: red;
+}
+
+@keyframes move {
+    0% {
+        transform: translateZ(0);
+    }
+    
+    100% {
+        transform: translate3d(calc(-50% - var(--items-gap) / 2), 0, 0);
+    }
+}

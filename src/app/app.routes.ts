@@ -11,6 +11,7 @@ import { PageQuoteComponent } from '@pages/page-quote/page-quote.component';
 import { PageSocialComponent } from '@pages/page-social/page-social.component';
 import { PageTestimonialsComponent } from '@pages/page-testimonials/page-testimonials.component';
 import { PageKitchenSinkComponent } from '@pages/page-kitchen-sink/page-kitchen-sink.component';
+import { PageMarqueeComponent } from "@pages/page-marquee/page-marquee.component";
 export const routes: Routes = [
     {path: '', pathMatch: 'full', redirectTo: '/home'},
     {
@@ -56,5 +57,9 @@ export const routes: Routes = [
     {
         path: 'testimonials', 
         component: PageTestimonialsComponent
+    },
+    {
+        path: 'marquee', 
+        component: PageMarqueeComponent
     },
 ];
