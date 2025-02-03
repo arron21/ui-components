@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ButtonComponent } from '../../ui/button/button.component';
-import { HeroComponent } from '../../ui/hero/hero.component';
-import { NavComponent } from '../../ui/nav/nav.component';
+import { ButtonComponent } from '@ui/button/button.component';
+import { HeroComponent } from '@ui/hero/hero.component';
+import { NavComponent } from '@ui/nav/nav.component';
 import { routes } from './app.routes';
+import { PageHomeComponent } from "../pages/page-home/page-home.component";
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -17,16 +18,12 @@ export class AppComponent {
   routes = routes;
   links = [
     {
-      label: 'Home',
-      link: '/',
+      path: 'home', 
+      component: PageHomeComponent
     },
     {
-      label: 'Button',
-      link: '/button',
-    },
-    {
-      label: 'Contact',
-      link: '/contact',
-    },
+      path: 'components', 
+      component: PageHomeComponent
+  },
   ];
 }
