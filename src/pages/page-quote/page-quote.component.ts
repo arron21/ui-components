@@ -11,5 +11,5 @@ import { CodeSnippetComponent } from "../../components/code-snippet/code-snippet
 })
 export class PageQuoteComponent {
   snippet = `
-  <app-quote text="I'm a developer, not a designer. I'm not a designer, I'm a developer." />`;
+  <app-quote text="What a lovely quote" />`;
 }

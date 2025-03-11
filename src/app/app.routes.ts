@@ -25,10 +25,6 @@ export const routes: Routes = [
         children: [
             
                 {
-                    path: 'kitchen-sink', 
-                    component: PageKitchenSinkComponent
-                },
-                {
                     path: 'button', 
                     component: PageButtonComponent
                 },

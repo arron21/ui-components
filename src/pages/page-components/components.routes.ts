@@ -14,11 +14,6 @@ import { PageComponentsComponent } from "./page-components.component";
 
 export const component_routes: Routes = [
     {path: '', pathMatch: 'full', redirectTo: '/home'},
-
-    {
-        path: 'kitchen-sink', 
-        component: PageKitchenSinkComponent
-    },
     {
         path: 'button', 
         component: PageButtonComponent
